@@ -1,0 +1,470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="style2.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles/style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aued Arquitectura</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/47b53d220d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-main">
+      <div class="barra">
+        <div class="logo">AUED ARQUITECTURA</div>
+        <div>
+          <div id="menuButton" hidden>
+            <label for="nav-check" class="hamburguer"></label>
+            <input type="checkbox" id="nav-check" hidden />
+            <i class="fa-solid fa-bars" style="color: #000"></i>
+          </div>
+          <ul class="nav" id="casasMenu">
+            <li class="barra-nav">
+              <a class="barra-a active" href="index.html" style="color: #fff">
+                <i class="fa-solid fa-bars" style="color: #ccc"></i> Home
+              </a>
+            </li>
+            <li class="barra-nav">
+              <a class="barra-a" href="#redes">
+                <i class="fa-solid fa-phone" style="color: #000000"></i> Contact
+              </a>
+            </li>
+            <li class="barra-nav has-sublist">
+              <a class="barra-a" href="#">
+                <i class="fa-solid fa-house" style="color: #000000"></i> Casas
+              </a>
+              <ul class="casas">
+                <li class="casas-li">
+                  <a
+                    class="barra-a2"
+                    href="#"
+                    onclick="mostrarOcultarOtraLista('nordelta'); rotateArrow('nordelta-arrow'); return false;"
+                  >
+                    Nordelta
+                    <i
+                      id="nordelta-arrow"
+                      class="fa-solid fa-arrow-right"
+                      style="color: #000"
+                    ></i>
+                  </a>
+                  <ul id="lista2-nordelta" class="casas2 hidden">
+                    <li><a href="obra2.html">Carpinchos L69</a></li>
+                    <li><a href="obra3.html">Carpinchos L70</a></li>
+                  </ul>
+                </li>
+                <li class="casas-li">
+                  <a
+                    class="barra-a2"
+                    href="#"
+                    onclick="mostrarOcultarOtraLista('puertos'); rotateArrow('puertos-arrow'); return false;"
+                  >
+                    Puertos
+                    <i
+                      id="puertos-arrow"
+                      class="fa-solid fa-arrow-right"
+                      style="color: #000"
+                    ></i>
+                  </a>
+                  <ul id="lista2-puertos" class="casas2 hidden">
+                    <li><a href="obra1.html">Marinas L34</a></li>
+                    <li><a href="obra4.html">Araucarias L120</a></li>
+                  </ul>
+                </li>
+                <li class="casas-li">
+                  <a
+                    class="barra-a2"
+                    href="#"
+                    onclick="mostrarOcultarOtraLista('canton'); rotateArrow('canton-arrow'); return false;"
+                  >
+                    Canton
+                    <i
+                      id="canton-arrow"
+                      class="fa-solid fa-arrow-right"
+                      style="color: #000"
+                    ></i>
+                  </a>
+                  <ul id="lista2-canton" class="casas2 hidden">
+                    <li><a href="obra8.html">Islas L339</a></li>
+                    <li><a href="obra9.html">Islas L317</a></li>
+                    <li><a href="obra10.html">Golf L347</a></li>
+                  </ul>
+                </li>
+                <li class="casas-li">
+                  <a
+                    class="barra-a2"
+                    href="#"
+                    onclick="mostrarOcultarOtraLista('talar-del-lago'); rotateArrow('talar-del-lago-arrow'); return false;"
+                  >
+                    Talar Del Lago
+                    <i
+                      id="talar-del-lago-arrow"
+                      class="fa-solid fa-arrow-right"
+                      style="color: #000"
+                    ></i>
+                  </a>
+                  <ul id="lista2-talar-del-lago" class="casas2 hidden">
+                    <li><a href="obra11.html">Talar Del Lago L126</a></li>
+                    <li><a href="obra12.html">Talar Del Lago L326</a></li>
+                  </ul>
+                </li>
+                <li class="casas-li">
+                  <a
+                    class="barra-a2"
+                    href="#"
+                    onclick="mostrarOcultarOtraLista('san-sebastian'); rotateArrow('san-sebastian-arrow'); return false;"
+                  >
+                    San Sebastian
+                    <i
+                      id="san-sebastian-arrow"
+                      class="fa-solid fa-arrow-right"
+                      style="color: #000"
+                    ></i>
+                  </a>
+                  <ul id="lista2-san-sebastian" class="casas2 hidden">
+                    <li><a href="obra6.html">San Sebastian L180</a></li>
+                  </ul>
+                </li>
+                <li class="casas-li">
+                  <a
+                    class="barra-a2"
+                    href="#"
+                    onclick="mostrarOcultarOtraLista('villa-nueva'); rotateArrow('villa-nueva-arrow'); return false;"
+                  >
+                    Villa Nueva
+                    <i
+                      id="villa-nueva-arrow"
+                      class="fa-solid fa-arrow-right"
+                      style="color: #000"
+                    ></i>
+                  </a>
+                  <ul id="lista2-villa-nueva" class="casas2 hidden">
+                    <li><a href="obra7.html">El Canal L45</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="barra-nav">
+              <a class="barra-a" href="#">
+                <i class="fa-solid fa-store" style="color: #000000"></i> Locales
+              </a>
+              <ul class="casas">
+                <li class="casas-li">
+                  <a class="barra-a2" href="obra13.html">G2 Nordelta</a>
+                </li>
+                <li class="casas-li">
+                  <a class="barra-a2" href="obra14.html">G2 Palermo</a>
+                </li>
+                <li class="casas-li">
+                  <a class="barra-a2" href="obra15.html">Centro Estetica</a>
+                </li>
+              </ul>
+            </li>
+            <li class="barra-nav">
+              <a class="barra-a" href="#">
+                <i class="fa-solid fa-wrench" style="color: #000000"></i>
+                Refacciones
+              </a>
+              <ul class="casas refa">
+                <li class="casas-li">
+                  <a class="barra-a2" href="obra16.html"
+                    >Talar Del Lago 2 L10</a
+                  >
+                </li>
+                <li class="casas-li">
+                  <a class="barra-a2" href="obra17.html">Talar Del Lago L130</a>
+                </li>
+                <li class="casas-li">
+                  <a class="barra-a2" href="obra18">Talar Del Lago 2 L266</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="container">
+        <div class="portada">
+          <img src="fotos/LOCAL G2 PALERMO/G2nordeltaportada.jpeg" />
+          <h2 class="nombre-obra">G2 Iluminacion Nordelta</h2>
+        </div>
+
+        <div class="details">
+          <div class="descripcion">
+            <div class="item item-1"><h3>Detalles del local</h3></div>
+            <div class="item item-2">
+              <p class="desc-casa">
+                Local que se desarrolla en un gran galpón de 6 mts de altura,
+                para bajar esa dimensión se pintó todo de negro y se colocaron
+                bandejas, armando una retícula con distribución simétrica para
+                ubicar la línea de artefactos colgantes. Se arma en el fondo un
+                sector de depósito de mercadería, con un gran muro que se
+                envuelve con un diseño de mueble en durlock que se utiliza
+                también para la exposición de parte de los productos embutidos y
+                lámparas de mesas. Se genera en el sector central de forma
+                simétrica un volumen más bajo y blanco que jerarquiza el sector
+                de trabajo, mesas de computadoras, con un cielorraso desmontable
+                con cambio de placas para la exposición de productos aplicados
+                en cielorraso. Para darle calidez los mobiliarios se hicieron en
+                madera reciclada. Y el solado del salón se hizo con un material
+                de alto tránsito color cobre dándole un toque de distinción. En
+                todo su perímetro se armó vidriera de exposición, optimizando
+                los metros lineales de exposición hacia el exterior.
+              </p>
+            </div>
+          </div>
+          <div class="caracteristicas">
+            <div class="box box-1">
+              <i
+                class="fa-solid fa-layer-group fa-2xl"
+                style="color: #a5a095"
+              ></i>
+              <h4>150</h4>
+              <h3>m²</h3>
+            </div>
+            <div class="box box-2">
+              <i class="fa-solid fa-bed fa-2xl" style="color: #a5a095"></i>
+              <h4>2</h4>
+              <h3>Habitaciones</h3>
+            </div>
+            <div class="box box-3">
+              <i class="fa-solid fa-shower fa-2xl" style="color: #a5a095"></i>
+              <h4>1</h4>
+              <h3>Baños</h3>
+            </div>
+            <div class="box box-4">
+              <i class="fa-solid fa-car fa-2xl" style="color: #a5a095"></i>
+              <h4>Publico</h4>
+              <h3>Garage</h3>
+            </div>
+          </div>
+        </div>
+        <div class="franja"></div>
+        <div class="image-container">
+          <div class="image">
+            <img src="fotos/LOCAL G2 PALERMO/G2nordeltaportada.jpeg" />
+          </div>
+          <div class="image">
+            <img src="fotos/puertos-fotos/L34arriba.jpeg" />
+          </div>
+          <div class="image">
+            <img src="fotos/puertos-fotos/L34arriba2.jpeg" />
+          </div>
+          <div class="image">
+            <img src="fotos/puertos-fotos/L34atras.jpeg" />
+          </div>
+          <div class="image">
+            <img src="fotos/puertos-fotos/L34Costado.jpeg" />
+          </div>
+          <div class="image">
+            <img src="fotos/puertos-fotos/L34atras2.jpeg" />
+          </div>
+          <div class="image">
+            <img src="fotos/puertos-fotos/L34portada.jpeg" />
+          </div>
+          <div class="image">
+            <img src="fotos/puertos-fotos/L34portada.jpeg" />
+          </div>
+        </div>
+        <div class="popup-image">
+          <span> &times; </span>
+          <img src="fotos/puertos-fotos/L34portada.jpeg" alt="" />
+        </div>
+        <div class="franja">
+          <p>Ubicacion</p>
+          >
+        </div>
+        <div class="mapa">
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3330.590719635143!2d-58.681656424088175!3d-34.40102704682232!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc9e848baeed5%3A0x5966a50ba6a8210e!2sG2%20Iluminacion%20Profesional!5e1!3m2!1ses!2sar!4v1693579966270!5m2!1ses!2sar"
+            width="1425"
+            height="600"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="caja-footer">
+        <div class="caja-redes">
+          <ul class="redes" id="redes">
+            <li class="logos">
+              <a href="https://www.facebook.com/barbara.aued" target="_blank">
+                <i class="fab fa-facebook-f icon"></i>
+              </a>
+            </li>
+            <li class="logos">
+              <a href="https://www.instagram.com/barbyaued/" target="_blank"
+                ><i class="fab fa-brands fa-instagram icon"></i
+              ></a>
+            </li>
+            <li class="logos">
+              <a
+                href="https://www.linkedin.com/in/barbara-aued-316062123/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in icon"></i
+              ></a>
+            </li>
+            <li class="logos">
+              <a href="#"><i class="fab fa-google-plus-g icon"></i></a>
+            </li>
+            <li class="logos">
+              <a href="https://wa.me/1169621915" target="_blank"
+                ><i class="fab fa-brands fa-whatsapp icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="caja-info-mateo">
+          <p>Sitio web dessarrollado por Mateo Musi</p>
+          <p><i class="fa-solid fa-envelope"></i> mateomusi657@gmail.com</p>
+          <p>
+            <i class="fa-solid fa-phone" style="color: #000"></i> +54
+            911-6962-1910
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script>
+      document.querySelectorAll(".image-container img").forEach((image) => {
+        image.onclick = () => {
+          document.querySelector(".popup-image").style.display = "block";
+          document.querySelector(".popup-image img").src =
+            image.getAttribute("src");
+        };
+      });
+
+      document.querySelector(".popup-image span").onclick = () => {
+        document.querySelector(".popup-image").style.display = "none";
+      };
+    </script>
+    <script>
+      // Función para mostrar u ocultar la segunda lista cuando se hace clic en un elemento de la primera lista
+      function mostrarOcultarOtraLista(idLista2) {
+        var lista2 = document.getElementById("lista2-" + idLista2);
+        lista2.style.display =
+          lista2.style.display === "none" || lista2.style.display === ""
+            ? "block"
+            : "none";
+      }
+    </script>
+    <script>
+      let rotated = false;
+
+      function rotateArrow(elementId) {
+        const arrow = document.getElementById(elementId);
+
+        if (!rotated) {
+          arrow.style.transform = "rotate(90deg)";
+          arrow.classList.add("rotate"); // Agrega la clase 'rotate' para la animación
+        } else {
+          arrow.style.transform = "rotate(0deg)";
+          arrow.classList.remove("rotate"); // Quita la clase 'rotate' para detener la animación
+        }
+
+        rotated = !rotated;
+      }
+    </script>
+    <script>
+      // Función para mostrar u ocultar la segunda lista cuando se hace clic en un elemento de la primera lista
+      function mostrarOcultarOtraLista(idLista2) {
+        var lista2 = document.getElementById("lista2-" + idLista2);
+        lista2.style.display =
+          lista2.style.display === "none" || lista2.style.display === ""
+            ? "block"
+            : "none";
+      }
+
+      // Función para rotar la flecha hacia arriba o abajo
+      function rotateArrow(idArrow) {
+        var arrow = document.getElementById(idArrow);
+        arrow.style.transform =
+          arrow.style.transform === "rotate(90deg)"
+            ? "rotate(0deg)"
+            : "rotate(90deg)";
+      }
+    </script>
+    <script>
+      // Verificar si la ventana tiene un ancho máximo de 1070px
+      if (window.matchMedia("(max-width: 1070px)").matches) {
+        manejarMenuEnDispositivosPequeños();
+        // Función que maneja los eventos del menú en dispositivos con ancho máximo de 1070px
+        function manejarMenuEnDispositivosPequeños() {
+          var menuButton = document.getElementById("menuButton");
+          var casasMenu = document.getElementById("casasMenu");
+
+          menuButton.addEventListener("click", function (event) {
+            event.stopPropagation(); // Evitar que el evento llegue al input
+            casasMenu.style.display =
+              casasMenu.style.display === "block" ? "none" : "block";
+          });
+
+          // Agregar un evento click en cualquier parte del documento para ocultar la lista
+          document.addEventListener("click", function () {
+            casasMenu.style.display = "none";
+          });
+        }
+      }
+    </script>
+  </body>
+</html>

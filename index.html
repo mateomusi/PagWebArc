@@ -1,0 +1,723 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aued Arquitectura</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.6.3/css/all.css"
+      integrity="sha384-UHRtZLI+pbxtHCWp1t77Bi1L4ZtiqrqD80Kn4Z8NTSRyMA2Fd33n5dQ8lWUE00s/"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://kit.fontawesome.com/47b53d220d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inconsolata:wght@200&family=Poppins&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header-main">
+      <div class="barra">
+        <div class="logo">AUED ARQUITECTURA</div>
+        <div>
+          <div id="menuButton" hidden>
+            <label for="nav-check" class="hamburguer"></label>
+            <input type="checkbox" id="nav-check" hidden />
+            <i class="fa-solid fa-bars" style="color: #000"></i>
+          </div>
+          <ul class="nav" id="casasMenu">
+            <li class="barra-nav">
+              <a class="barra-a active" href="index.html" style="color: #fff">
+                <i class="fa-solid fa-bars" style="color: #ccc"></i> Home
+              </a>
+            </li>
+            <li class="barra-nav">
+              <a class="barra-a" href="#redes">
+                <i class="fa-solid fa-phone" style="color: #000000"></i> Contact
+              </a>
+            </li>
+            <li class="barra-nav has-sublist">
+              <a class="barra-a" href="#">
+                <i class="fa-solid fa-house" style="color: #000000"></i> Casas
+              </a>
+              <ul class="casas">
+                <li class="casas-li">
+                  <a
+                    class="barra-a2"
+                    href="#"
+                    onclick="mostrarOcultarOtraLista('nordelta'); rotateArrow('nordelta-arrow'); return false;"
+                  >
+                    Nordelta
+                    <i
+                      id="nordelta-arrow"
+                      class="fa-solid fa-arrow-right"
+                      style="color: #000"
+                    ></i>
+                  </a>
+                  <ul id="lista2-nordelta" class="casas2 hidden">
+                    <li><a href="#L69">Carpinchos L69</a></li>
+                    <li><a href="#L70">Carpinchos L70</a></li>
+                  </ul>
+                </li>
+                <li class="casas-li">
+                  <a
+                    class="barra-a2"
+                    href="#"
+                    onclick="mostrarOcultarOtraLista('puertos'); rotateArrow('puertos-arrow'); return false;"
+                  >
+                    Puertos
+                    <i
+                      id="puertos-arrow"
+                      class="fa-solid fa-arrow-right"
+                      style="color: #000"
+                    ></i>
+                  </a>
+                  <ul id="lista2-puertos" class="casas2 hidden">
+                    <li><a href="#obra1">Marinas L34</a></li>
+                    <li><a href="#L120">Araucarias L120</a></li>
+                  </ul>
+                </li>
+                <li class="casas-li">
+                  <a
+                    class="barra-a2"
+                    href="#"
+                    onclick="mostrarOcultarOtraLista('canton'); rotateArrow('canton-arrow'); return false;"
+                  >
+                    Canton
+                    <i
+                      id="canton-arrow"
+                      class="fa-solid fa-arrow-right"
+                      style="color: #000"
+                    ></i>
+                  </a>
+                  <ul id="lista2-canton" class="casas2 hidden">
+                    <li><a href="#L339">Islas L339</a></li>
+                    <li><a href="#L317">Islas L317</a></li>
+                    <li><a href="#L347">Golf L347</a></li>
+                  </ul>
+                </li>
+                <li class="casas-li">
+                  <a
+                    class="barra-a2"
+                    href="#"
+                    onclick="mostrarOcultarOtraLista('talar-del-lago'); rotateArrow('talar-del-lago-arrow'); return false;"
+                  >
+                    Talar Del Lago
+                    <i
+                      id="talar-del-lago-arrow"
+                      class="fa-solid fa-arrow-right"
+                      style="color: #000"
+                    ></i>
+                  </a>
+                  <ul id="lista2-talar-del-lago" class="casas2 hidden">
+                    <li><a href="#tl126">Talar Del Lago L126</a></li>
+                    <li><a href="#tl326">Talar Del Lago L326</a></li>
+                  </ul>
+                </li>
+                <li class="casas-li">
+                  <a
+                    class="barra-a2"
+                    href="#"
+                    onclick="mostrarOcultarOtraLista('san-sebastian'); rotateArrow('san-sebastian-arrow'); return false;"
+                  >
+                    San Sebastian
+                    <i
+                      id="san-sebastian-arrow"
+                      class="fa-solid fa-arrow-right"
+                      style="color: #000"
+                    ></i>
+                  </a>
+                  <ul id="lista2-san-sebastian" class="casas2 hidden">
+                    <li><a href="#tl180">San Sebastian L180</a></li>
+                  </ul>
+                </li>
+                <li class="casas-li">
+                  <a
+                    class="barra-a2"
+                    href="#"
+                    onclick="mostrarOcultarOtraLista('villa-nueva'); rotateArrow('villa-nueva-arrow'); return false;"
+                  >
+                    Villa Nueva
+                    <i
+                      id="villa-nueva-arrow"
+                      class="fa-solid fa-arrow-right"
+                      style="color: #000"
+                    ></i>
+                  </a>
+                  <ul id="lista2-villa-nueva" class="casas2 hidden">
+                    <li><a href="#L45">El Canal L45</a></li>
+                  </ul>
+                </li>
+              </ul>
+            </li>
+            <li class="barra-nav">
+              <a class="barra-a" href="#">
+                <i class="fa-solid fa-store" style="color: #000000"></i> Locales
+              </a>
+              <ul class="casas">
+                <li class="casas-li">
+                  <a class="barra-a2" href="#g2n">G2 Nordelta</a>
+                </li>
+                <li class="casas-li">
+                  <a class="barra-a2" href="#g2p">G2 Palermo</a>
+                </li>
+                <li class="casas-li">
+                  <a class="barra-a2" href="#cen-est">Centro Estetica</a>
+                </li>
+              </ul>
+            </li>
+            <li class="barra-nav">
+              <a class="barra-a" href="#">
+                <i class="fa-solid fa-wrench" style="color: #000000"></i>
+                Refacciones
+              </a>
+              <ul class="casas refa">
+                <li class="casas-li">
+                  <a class="barra-a2" href="#l10">Talar Del Lago 2 L10</a>
+                </li>
+                <li class="casas-li">
+                  <a class="barra-a2" href="#tl130">Talar Del Lago L130</a>
+                </li>
+                <li class="casas-li">
+                  <a class="barra-a2" href="#tl40">Talar Del Lago 2 L40</a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <div id="slider">
+        <div class="slides">
+          <img src="fotos/puertos-fotos/L34portada.jpeg" width="100%" />
+        </div>
+
+        <div class="slides">
+          <img src="fotos/nordelta-fotos/CarpinchoPortada.jpeg" width="100%" />
+        </div>
+
+        <div class="slides">
+          <img src="fotos/canton-fotos/L339portada.jpeg" width="100%" />
+        </div>
+
+        <div class="slides">
+          <img src="fotos/puertos-fotos/L120portada.jpeg" width="100%" />
+        </div>
+        <div class="slides">
+          <img src="fotos/canton-fotos/L339portada.jpeg" width="100%" />
+        </div>
+        <div class="slides">
+          <img src="fotos/villa-nueva-fotos/L45portada.jpeg" width="100%" />
+        </div>
+        <div class="slides">
+          <img
+            src="fotos/dept-san:san-seb:elcanal/san-seb-portada.jpeg"
+            width="100%"
+          />
+        </div>
+        <h1 class="titulo">Barbara Aued Arquitectura</h1>
+        <div id="dot">
+          <span class="dot"></span><span class="dot"></span
+          ><span class="dot"></span><span class="dot"></span
+          ><span class="dot"></span><span class="dot"></span>
+          <span class="dot"></span>
+        </div>
+      </div>
+      <div class="container-main">
+        <div class="caja caja1">
+          <div class="obra obra1" id="obra1">
+            <img id="imagen-datos" src="fotos/puertos-fotos/L34portada.jpeg" />
+            <div class="caja-obra">
+              <h2 id="L34">01 | Puertos Del Lago: Marinas L34</h2>
+              <p>
+                Proyecto de casa al lago central con las mejores visuales, con
+                un terreno de más de 1100m2...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra1.html">Mas Info</a>
+              </button>
+            </div>
+          </div>
+          <div class="obra obra2" id="obra2">
+            <div class="caja-obra">
+              <h2 id="L69">02 | Nordelta: Carpinchos L69</h2>
+              <p>
+                Casa construida en un terreno de 550m2 pequeño para los m2
+                totales a desarrollar, se creó un patio, como generador de un
+                espacio verde, dándole de esta forma movimiento al volumen total
+                de la casa...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra2.html">Mas Info</a>
+              </button>
+            </div>
+            <img
+              id="imagen-datos"
+              src="fotos/nordelta-fotos/CarpinchoPortada.jpeg"
+            />
+          </div>
+        </div>
+        <div class="separator">
+          <span class="line"></span><span class="square"></span
+          ><span class="line"></span>
+        </div>
+        <div class="caja caja2">
+          <div class="obra obra3" id="obra3">
+            <img
+              id="imagen-datos"
+              src="fotos/nordelta-fotos/CARPINCHO 70/L70portada.jpeg"
+            />
+            <div class="caja-obra">
+              <h2 id="L70">03 | Nordelta: Carpincho L70</h2>
+              <p>
+                Casa con una distribución muy útil de todos los espacios, se
+                crearon todas las habitaciones al contrafrente con vista al río,
+                y los servicios en laterales...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra3.html">Mas Info</a>
+              </button>
+            </div>
+          </div>
+          <div class="obra obra4" id="obra4">
+            <div class="caja-obra">
+              <h2 id="L120">04 | Puertos Del Lago: Araucarias L120</h2>
+              <p>
+                Casa con vista abierta al centro deportivo, se proyectó un juego
+                de volúmenes, creado por las diagonales del terreno...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra4.html">Mas Info</a>
+              </button>
+            </div>
+            <img id="imagen-datos" src="fotos/puertos-fotos/L120portada.jpeg" />
+          </div>
+        </div>
+        <div class="separator">
+          <span class="line"></span><span class="square"></span
+          ><span class="line"></span>
+        </div>
+        <div class="caja caja3">
+          <div class="obra obra5" id="obra5">
+            <img
+              id="imagen-datos"
+              class="dept-san"
+              src="fotos/dept-san:san-seb:elcanal/dept-san-portada.jpeg"
+              style="margin-top: 100px"
+            />
+            <div class="caja-obra">
+              <h2 id="dps">05 | Dept Sarmiento Tigre</h2>
+              <p class="parr">
+                Departamentos y locales comerciales, con un pulmón de manzana
+                según normas...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra5.html">Mas Info</a>
+              </button>
+            </div>
+          </div>
+          <div class="obra obra6" id="obra6">
+            <div class="caja-obra">
+              <h2 id="tl180">06 | Loma Verde San Sebastian L180 Area 9</h2>
+              <p class="parr">
+                Casa en una planta en forma de L, con un ala en donde se ubica
+                lo privado...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra6.html">Mas Info</a>
+              </button>
+            </div>
+            <img
+              id="imagen-datos"
+              src="fotos/dept-san:san-seb:elcanal/san-seb-portada.jpeg"
+            />
+          </div>
+        </div>
+        <div class="separator">
+          <span class="line"></span><span class="square"></span
+          ><span class="line"></span>
+        </div>
+        <div class="caja caja4">
+          <div class="obra obra7" id="obra7">
+            <img
+              id="imagen-datos"
+              src="fotos/villa-nueva-fotos/L45portada.jpeg"
+            />
+            <div class="caja-obra">
+              <h2 id="L45">07 | Villa Nueva El Canal L45</h2>
+              <p>
+                Casa en dos plantas ubicada estratégicamente en un terreno con
+                las mejores visuales a un brazo que desemboca en el río...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra7.html">Mas Info</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="obra obra8" id="obra8">
+            <div class="caja-obra">
+              <h2 id="L339">08 | Canton Islas L339</h2>
+              <p>
+                Casa en dos plantas ubicada en una isla con una orientación NE,
+                se ubica la piscina lateral con solarium en el sector del
+                retiro...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra8.html">Mas Info</a>
+              </button>
+            </div>
+            <img id="imagen-datos" src="fotos/canton-fotos/L339portada.jpeg" />
+          </div>
+        </div>
+        <div class="separator">
+          <span class="line"></span><span class="square"></span
+          ><span class="line"></span>
+        </div>
+        <div class="caja caja5">
+          <div class="obra obra9" id="obra9">
+            <img id="imagen-datos" src="fotos/canton-fotos/L317portada.jpeg" />
+            <div class="caja-obra">
+              <h2 id="L317">09 | Canton Islas L317</h2>
+              <p>
+                Casa con una distribución muy útil de todos los espacios, se
+                crearon todas las habitaciones al contrafrente con vista al
+                río...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra9.html">Mas Info</a>
+              </button>
+            </div>
+          </div>
+
+          <div class="obra obra10" id="obra10">
+            <div class="caja-obra">
+              <h2 id="L347">10 | Canton Golf L347</h2>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio,
+                culpa iusto dignissimos ex autem illo dolorem sed perspiciatis
+                aliquam quidem voluptatem. Maxime dolorum, velit necessitatibus
+                facere, eius officiis reprehenderit nesciunt accusantium ad enim
+                odio sit rerum illo expedita. Maiores, quos.
+              </p>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vero
+                nesciunt molestiae est iste architecto aspernatur voluptates
+                beatae maxime, itaque, libero dolor nisi atque laudantium
+                sapiente consequatur error tenetur dicta distinctio.
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra10.html">Mas Info</a>
+              </button>
+            </div>
+            <img id="imagen-datos" src="fotos/canton-fotos/L347portada.jpeg" />
+          </div>
+        </div>
+        <div class="separator">
+          <span class="line"></span><span class="square"></span
+          ><span class="line"></span>
+        </div>
+        <div class="caja caja6">
+          <div class="obra obra11" id="obra11">
+            <img
+              id="imagen-datos"
+              src="https://hhsbanner.com/wp-content/uploads/2019/03/victoria_falls-900x300.jpg"
+            />
+            <div class="caja-obra">
+              <h2 id="tl126">11 | Talar Del Lago II L126</h2>
+              <p class="parr">
+                Casa en dos plantas con dos volúmenes bien definidas unidos por
+                un elemento vertical...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra11.html">Mas Info</a>
+              </button>
+            </div>
+          </div>
+          <div class="obra obra12" id="obra12">
+            <div class="caja-obra">
+              <h2 id="tl326">12 | Talar Del Lago II L326</h2>
+              <p class="parr">
+                Casa en tres pisos, ubicada en un gran terreno de forma
+                triangular, amplio en el frente y cerrado en el fondo...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra12.html">Mas Info</a>
+              </button>
+            </div>
+            <img id="imagen-datos" src="fotos/T.D.L-fotos/L326portada.jpeg" />
+          </div>
+        </div>
+        <div class="franja">
+          <p id="Locales">LOCALES</p>
+        </div>
+        <div class="caja caja7">
+          <div class="obra obra13" id="obra13">
+            <img
+              id="imagen-datos"
+              src="fotos/LOCAL G2 PALERMO/G2nordeltaportada.jpeg"
+            />
+            <div class="caja-obra">
+              <h2 id="g2n">13 | Nordelta: Local G2 Iluminacion</h2>
+              <p>
+                Local que se desarrolla en un gran galpón de 6 mts de altura,
+                para bajar esa dimensión se pintó todo de negro...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra13.html">Mas Info</a>
+              </button>
+            </div>
+          </div>
+          <div class="obra obra14" id="obra14">
+            <div class="caja-obra">
+              <h2 id="g2p">14 | Palermo: Local G2 Iluminacion</h2>
+              <p>
+                Local que se desarrolla en un lugar urbano con mucha presencia
+                de gente...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra14.html">Mas Info</a>
+              </button>
+            </div>
+            <img
+              id="imagen-datos"
+              src="fotos/LOCAL G2 PALERMO/20140502_174857.jpg"
+            />
+          </div>
+        </div>
+        <div class="caja caja8">
+          <div class="obra obra15" id="obra15">
+            <img
+              id="imagen-datos"
+              src="fotos/CENTRO ESTETICA/0e453d64-f7f3-4d7b-a97c-6552336139a5.jpg"
+            />
+            <div class="caja-obra">
+              <h2 id="cen-est">15 | San Isidro: Centro De Estetica</h2>
+              <p>
+                Local super femenino, se armó el sector de trabajo de exposición
+                para que desde el exterior se aprecie lo que se hace...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra15.html">Mas Info</a>
+              </button>
+            </div>
+          </div>
+        </div>
+        <div style="display: none" class="franja">
+          <p id="Refacciones">REFACCIONES</p>
+        </div>
+        <div style="display: none" class="caja caja9">
+          <div class="obra obra16" id="obra16">
+            <div class="caja-obra">
+              <h2 id="l10">16 | Talar Del Lago II L10</h2>
+              <p>
+                Ampliación, en esta casa se amplió en un ala de la casa un
+                sector más, con dos habitaciones...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra16.html">Mas Info</a>
+              </button>
+            </div>
+            <img
+              id="imagen-datos"
+              src="https://hhsbanner.com/wp-content/uploads/2019/03/victoria_falls-900x300.jpg"
+            />
+          </div>
+        </div>
+        <div style="display: none" class="caja caja10">
+          <div class="obra obra17" id="obra17">
+            <img
+              id="imagen-datos"
+              src="https://hhsbanner.com/wp-content/uploads/2019/03/victoria_falls-900x300.jpg"
+            />
+            <div class="caja-obra">
+              <h2 id="tl130">17 | Talar Del Lago II L130</h2>
+              <p class="parr">
+                Ampliación, en esta casa se armó un módulo más en la vivienda,
+                un volumen se conecta con el existente...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra17.html">Mas Info</a>
+              </button>
+            </div>
+          </div>
+          <div class="obra obra18" id="obra18">
+            <div class="caja-obra">
+              <h2 id="tl266">18 | Talar Del Lago II L266</h2>
+              <p class="parr">
+                Ampliación, cambio de materiales y color de fachada...
+              </p>
+              <button class="btn-info">
+                <a class="boton" href="obra18.html">Mas Info</a>
+              </button>
+            </div>
+            <img
+              id="imagen-datos"
+              src="https://hhsbanner.com/wp-content/uploads/2019/03/victoria_falls-900x300.jpg"
+            />
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <div class="caja-footer">
+        <div class="caja-redes">
+          <ul class="redes" id="redes">
+            <li class="logos">
+              <a href="https://www.facebook.com/barbara.aued" target="_blank">
+                <i class="fab fa-facebook-f icon"></i>
+              </a>
+            </li>
+            <li class="logos">
+              <a href="https://www.instagram.com/barbyaued/" target="_blank"
+                ><i class="fab fa-brands fa-instagram icon"></i
+              ></a>
+            </li>
+            <li class="logos">
+              <a
+                href="https://www.linkedin.com/in/barbara-aued-316062123/"
+                target="_blank"
+                ><i class="fab fa-linkedin-in icon"></i
+              ></a>
+            </li>
+            <li class="logos">
+              <a href="#"><i class="fab fa-google-plus-g icon"></i></a>
+            </li>
+            <li class="logos">
+              <a href="https://wa.me/1169621915" target="_blank"
+                ><i class="fab fa-brands fa-whatsapp icon"></i
+              ></a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="caja-info-mateo">
+          <p>Sitio web dessarrollado por Mateo Musi</p>
+          <p><i class="fa-solid fa-envelope"></i> mateomusi657@gmail.com</p>
+          <p>
+            <i class="fa-solid fa-phone" style="color: #000"></i> +54
+            911-6962-1910
+          </p>
+        </div>
+      </div>
+    </footer>
+    <script src="java.js"></script>
+    <script>
+      // Función para mostrar u ocultar la segunda lista cuando se hace clic en un elemento de la primera lista
+      function mostrarOcultarOtraLista(idLista2) {
+        var lista2 = document.getElementById("lista2-" + idLista2);
+        lista2.style.display =
+          lista2.style.display === "none" || lista2.style.display === ""
+            ? "block"
+            : "none";
+      }
+    </script>
+    <script>
+      let rotated = false;
+
+      function rotateArrow(elementId) {
+        const arrow = document.getElementById(elementId);
+
+        if (!rotated) {
+          arrow.style.transform = "rotate(90deg)";
+          arrow.classList.add("rotate"); // Agrega la clase 'rotate' para la animación
+        } else {
+          arrow.style.transform = "rotate(0deg)";
+          arrow.classList.remove("rotate"); // Quita la clase 'rotate' para detener la animación
+        }
+
+        rotated = !rotated;
+      }
+    </script>
+    <script>
+      hamburger = document.querySelector(".hamburger");
+      nav = document.querySelector(".nav");
+      hamburger.onclick = function () {
+        nav.classList.toggle("active");
+      };
+    </script>
+    <script>
+      // Función para mostrar u ocultar la segunda lista cuando se hace clic en un elemento de la primera lista
+      function mostrarOcultarOtraLista(idLista2) {
+        var lista2 = document.getElementById("lista2-" + idLista2);
+        lista2.style.display =
+          lista2.style.display === "none" || lista2.style.display === ""
+            ? "block"
+            : "none";
+      }
+
+      // Función para rotar la flecha hacia arriba o abajo
+      function rotateArrow(idArrow) {
+        var arrow = document.getElementById(idArrow);
+        arrow.style.transform =
+          arrow.style.transform === "rotate(90deg)"
+            ? "rotate(0deg)"
+            : "rotate(90deg)";
+      }
+    </script>
+    <script>
+      // Verificar si la ventana tiene un ancho máximo de 1070px
+      if (window.matchMedia("(max-width: 1070px)").matches) {
+        manejarMenuEnDispositivosPequeños();
+        // Función que maneja los eventos del menú en dispositivos con ancho máximo de 1070px
+        function manejarMenuEnDispositivosPequeños() {
+          var menuButton = document.getElementById("menuButton");
+          var casasMenu = document.getElementById("casasMenu");
+
+          menuButton.addEventListener("click", function (event) {
+            event.stopPropagation(); // Evitar que el evento llegue al input
+            casasMenu.style.display =
+              casasMenu.style.display === "block" ? "none" : "block";
+          });
+
+          // Agregar un evento click en cualquier parte del documento para ocultar la lista
+          document.addEventListener("click", function () {
+            casasMenu.style.display = "none";
+          });
+        }
+      }
+    </script>
+  </body>
+</html>

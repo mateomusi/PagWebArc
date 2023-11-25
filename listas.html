@@ -1,0 +1,43 @@
+<div class="lista-container">
+  <ul>
+    <li>
+      <a href="#" onclick="mostrarOcultarOtraLista(1); return false;">Item 1</a>
+    </li>
+    <li>
+      <a href="#" onclick="mostrarOcultarOtraLista(2); return false;">Item 2</a>
+    </li>
+    <li>
+      <a href="#" onclick="mostrarOcultarOtraLista(3); return false;">Item 3</a>
+    </li>
+  </ul>
+
+  <ul id="lista2-1" class="hidden">
+    <li>Elemento 1 - Lista 1</li>
+    <li>Elemento 2 - Lista 1</li>
+    <li>Elemento 3 - Lista 1</li>
+  </ul>
+  <ul id="lista2-2" class="hidden">
+    <li>Elemento 1 - Lista 2</li>
+    <li>Elemento 2 - Lista 2</li>
+    <li>Elemento 3 - Lista 2</li>
+  </ul>
+  <ul id="lista2-3" class="hidden">
+    <li>Elemento 1 - Lista 3</li>
+    <li>Elemento 2 - Lista 3</li>
+    <li>Elemento 3 - Lista 3</li>
+  </ul>
+</div>
+
+<script>
+  function mostrarOcultarOtraLista(numeroLista) {
+    // Oculta todas las listas2
+    var listas2 = document.querySelectorAll(".lista2");
+    listas2.forEach(function (lista2) {
+      lista2.classList.add("hidden");
+    });
+
+    // Muestra la lista2 correspondiente al número seleccionado
+    var lista2 = document.getElementById("lista2-" + numeroLista);
+    lista2.classList.remove("hidden");
+  }
+</script>
